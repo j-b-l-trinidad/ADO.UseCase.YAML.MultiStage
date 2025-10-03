@@ -81,7 +81,7 @@ stages:
             displayName: 'Azure App Service Deploy: website'
             inputs:
               azureSubscription: 'ado-use-case-arm-connection'
-              appName: '$(var-app)'
+              appName: '$(var-dev-app)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
 
 - stage: 'Test'
