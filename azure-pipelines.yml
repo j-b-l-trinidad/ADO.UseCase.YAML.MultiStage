@@ -115,7 +115,7 @@ stages:
   - deployment: Deploy
     pool:
       vmImage: 'ubuntu-22.04'
-    environment: ado-use-case-staging-env
+    environment: ado-use-case-test-env
     variables:
     - group: 'ado-use-case-variables'
     strategy:
